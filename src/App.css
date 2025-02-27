@@ -1,0 +1,96 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  background-color: #fff;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Estilos para la palabra oculta */
+.word {
+  font-size: 2rem;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.letter {
+  display: inline-block;
+  width: 30px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animación para letras reveladas */
+.letter.revealed {
+  transform: scale(1.2);
+  color: #3498db;
+}
+
+/* Estilos para el teclado virtual */
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.keyboard button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.keyboard button:hover:not(:disabled) {
+  background-color: #ccc;
+}
+
+.keyboard button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Estilos para la figura del ahorcado */
+.hangman {
+  margin-bottom: 20px;
+  transition: opacity 0.5s ease;
+}
+
+/* Estilos para los mensajes (victoria/derrota) */
+.message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Estilos para los botones generales */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
